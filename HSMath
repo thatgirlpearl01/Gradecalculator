@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title> Miss Ubaru's Cycle Grade Calculator</title>
+<meta charset="windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+
+    function calc()
+
+    {
+        var n1 = parseFloat(document.getElementById('n1').value);
+        var n2 = parseFloat(document.getElementById('n2').value);
+        var n3 = parseFloat(document.getElementById('n3').value);
+        var n4 = parseFloat(document.getElementById('n4').value);
+        var n5 = parseFloat(document.getElementById('n5').value);
+        var n6 = parseFloat(document.getElementById('n6').value);
+        var n7 = parseFloat(document.getElementById('n7').value);
+        var n8 = parseFloat(document.getElementById('n8').value);
+        var n9 = parseFloat(document.getElementById('n9').value);
+        var n10 = parseFloat(document.getElementById('n10').value);
+        var n11 = parseFloat(document.getElementById('n11').value);
+       
+        var oper = document.getElementById('operators').value;
+       
+        (oper === '+')
+        {
+            document.getElementById('result').value = document.getElementById('result').value = 
+            ((n1*0.20)+(n2*0.20)+(n3*0.20)+(n4*0.05)+(n5*0.05)+(n6*0.05)+(n7*0.05)+(n8*0.05)+(n9*0.05)+(n10*0.05)
+            +(n11*0.05));
+        }
+       
+    }
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+<div id="wrap">
+
+<div id="header">
+<img src="img/calculatorlogo23.png" class="logo" />
+<span class="title"> Miss Ubaru's Grade Cycle Calculator</span>
+
+</div>
+
+<p> <h2> INSTRUCTIONS</h2>
+</p>
+<break>
+</break>
+<p> <h4>Type in the grades you have received, be sure that there is no empty cells,
+    enter 0, if no grade is available</h4>
+</p>
+<break>
+</break>
+<p> <h4> After you press 'Compute' the results will show you your
+average so far.</h4>
+</p>
+
+</div>
+
+<b>Tests </b><br>
+<input type="text" id="n1" /> <br/><br/>
+<input type="text" id="n2" /><br/><br/>
+<input type="text" id="n3" /><br/><br/>
+<br>
+    <b>Quizzes </b><br>
+<input type="text" id="n4" /><br/><br/>
+<input type="text" id="n5" /><br/><br/>
+<input type="text" id="n6" /><br/><br/>
+<input type="text" id="n7" /><br/><br/>
+<br>
+    <b>Homeworks </b><br>
+<input type="text" id="n8" /><br/><br/>
+<input type="text" id="n9" /><br/><br/>
+<input type="text" id="n10" /><br/><br/>
+<input type="text" id="n11" /><br/><br/>
+<br>
+
+<select id="operators">
+        <option value="+">+</option>
+    </select>
+
+<button onclick="calc();">Compute</button>
+<input type="float" id="result"/>
+
+</body>
+</html>
